@@ -32,7 +32,6 @@ dependencies = [
   "pandas",
   "scikit-learn",
   "pyarrow",
-  "fastparquet",
 ]
 
 [project.urls]

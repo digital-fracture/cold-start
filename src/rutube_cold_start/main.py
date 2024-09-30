@@ -23,7 +23,9 @@ def recommend(
 
     recommendations = get_all_interests(full_video_df, interaction_history, count)
 
-    return [UUID(recommendation) for recommendation in recommendations]
+    recommended_ids = [rec["video_id"] for rec in recommendations]
+
+    return [UUID(recommendation) for recommendation in recommended_ids]
 
 
 async def recommend_async(
